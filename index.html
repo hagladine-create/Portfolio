@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Portfolio</title>
+  <meta name="description" content="Audio and video portfolio." />
+  <meta name="theme-color" content="#f3f0e8" />
+
+  <!-- Social sharing basics. Replace content values later. -->
+  <meta property="og:title" content="Portfolio" />
+  <meta property="og:description" content="Audio and video portfolio." />
+  <meta property="og:type" content="website" />
+
+  <link rel="manifest" href="site.webmanifest" />
+  <link rel="stylesheet" href="styles.css" />
+
+  <script src="content.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="top">
+    <a class="brand" href="#top" id="site-name">Your Name</a>
+
+    <button
+      class="menu-button"
+      type="button"
+      aria-expanded="false"
+      aria-controls="site-nav"
+    >
+      Menu
+    </button>
+
+    <nav class="site-nav" id="site-nav" aria-label="Primary">
+      <a href="#featured">Featured</a>
+      <a href="#audio">Audio</a>
+      <a href="#video">Video</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero section-shell" aria-labelledby="hero-title">
+      <div>
+        <p class="eyebrow" id="site-role">Audio · Video · Creative Work</p>
+        <h1 id="hero-title">A flexible home for your work.</h1>
+      </div>
+
+      <div class="hero-copy">
+        <p id="site-intro">
+          This base is designed to grow with you: add projects in one file and
+          the site takes care of the layout.
+        </p>
+
+        <div class="hero-actions">
+          <a class="button" href="#featured">View selected work</a>
+          <a class="text-link" href="#contact">Get in touch</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="portfolio-section section-shell" id="featured">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Selected work</p>
+          <h2>Featured</h2>
+        </div>
+        <p>
+          Mark any project as featured in <code>content.js</code> and it
+          appears here automatically.
+        </p>
+      </div>
+
+      <div class="featured-grid" id="featured-grid"></div>
+    </section>
+
+    <section class="portfolio-section section-shell" id="audio">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Sound</p>
+          <h2>Audio</h2>
+        </div>
+
+        <div class="section-tools">
+          <p>SoundCloud tracks and playlists.</p>
+          <div class="filter-row" id="audio-filters" aria-label="Filter audio projects"></div>
+        </div>
+      </div>
+
+      <div class="audio-list" id="audio-list"></div>
+    </section>
+
+    <section class="portfolio-section section-shell" id="video">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Moving image</p>
+          <h2>Video</h2>
+        </div>
+
+        <div class="section-tools">
+          <p>YouTube films, reels, music videos, and other video work.</p>
+          <div class="filter-row" id="video-filters" aria-label="Filter video projects"></div>
+        </div>
+      </div>
+
+      <div class="video-grid" id="video-grid"></div>
+    </section>
+
+    <section class="info-section section-shell" id="about">
+      <p class="eyebrow">About</p>
+      <div class="info-grid">
+        <h2>Background, practice, and approach.</h2>
+
+        <div class="prose">
+          <div id="about-copy"></div>
+
+          <dl class="fact-list" id="fact-list"></dl>
+        </div>
+      </div>
+    </section>
+
+    <section class="info-section section-shell" id="contact">
+      <p class="eyebrow">Contact</p>
+      <div class="info-grid">
+        <h2>Available for the right project.</h2>
+
+        <div class="prose">
+          <a class="big-link" id="email-link" href="mailto:you@example.com">
+            you@example.com
+          </a>
+
+          <p id="contact-note">
+            Add your preferred contact details and social links in
+            <code>content.js</code>.
+          </p>
+
+          <div class="social-links" id="social-links"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer section-shell">
+    <span>© <span id="year"></span> <span id="footer-name">Your Name</span></span>
+    <span class="footer-note">Built as a static portfolio base.</span>
+    <a href="#top">Back to top ↑</a>
+  </footer>
+
+  <noscript>
+    <div class="noscript-note">
+      This portfolio uses a small amount of JavaScript to render project
+      entries from <code>content.js</code>. Please enable JavaScript to view
+      the project lists.
+    </div>
+  </noscript>
+</body>
+</html>
